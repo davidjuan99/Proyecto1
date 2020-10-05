@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+/* Estilo nav */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav div {
+      margin-top: 14px;
+  }
+  
+  .topnav a:hover {
+    background-color:transparent;
+    color: white;
+  }
+  
+  .active {
+    background-color: #101110;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+/* Estilos banner */
+.banner {
+    background: url(http://desarrollofrontend.com/wp-content/uploads/2014/11/img_default.png) no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
+    width: 100% ;
+}
