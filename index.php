@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="topnav">
-  		<a href="#home" class="active"><img src="logo.png" style="width: 50px; height: 50px"></a>
   	<div>
-  		<a href="#news">Quiénes somos</a>
-  		<a href="#contact">Qué hacemos</a>
-  		<a href="#about">Contacto</a>
+        <a href="#inicio" class="p_link">Inicio</a>
+  		<a href="#noticias">Noticias</a>
+  		<a href="#galeria">Galeria</a>
+  		<a href="#contacto" class="u_link">Contacto</a>
      </div>
     </div>
     <div class="banner">

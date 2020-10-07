@@ -8,16 +8,25 @@ body {
     position: fixed;
     width: 100%;
   }
+
+  .topnav .p_link {
+    margin-left: 38%;
+  }
+
+  .topnav .u_link {
+    margin-right: 38%;
+  }
   
   .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 16px 30px;
     text-decoration: none;
     font-size: 17px;
   }
+
 
   .topnav div {
       margin-top: 14px;
@@ -25,7 +34,7 @@ body {
   
   .topnav a:hover {
     background-color:transparent;
-    color: white;
+    color: orange;
   }
   
   .active {
@@ -39,8 +48,60 @@ body {
 
 /* Estilos banner */
 .banner {
-    background: url(http://desarrollofrontend.com/wp-content/uploads/2014/11/img_default.png) no-repeat fixed center;
+    background: url(../img/banner.jpg) no-repeat fixed center;
     background-size: cover;
     height: 100vh;
-    width: 100% ;
+    max-width: 100%;
+}
+
+/* Dispositivos tablet estirada, pc pantalla pequeña */
+@media (min-width: 850px) and (max-width: 1400px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+  }
+
+  .topnav .p_link {
+    margin-left: 30%;
+  }
+
+  .topnav .u_link {
+    margin-right: 30%;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px 30px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}
+/* Moviles */
+@media (min-width: 400px) and (max-width: 849px){
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+  }
+  .topnav a:hover {
+    color: orange;
+  }
+  
+  .topnav .p_link {
+    margin-left: 0;
+  }
+
+  .topnav .u_link {
+    margin-right: 0;
+  }
 }
