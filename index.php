@@ -40,30 +40,63 @@
                         <p>Bienvenido a la mejor página web sobre noticias tecnológicas. Dale a "Noticias" para acceder directamente a los últimos post de la web.</p>
                         <a href="" class="btn btn-yo"> <span>Noticias</span> </a>
                     </div>
-
                 </div>
             </div>
         </div>
 
     </header>
+    <!-- Opcional hasta que creemos la lógica de la cuenta atrás -->
+    <div data-type="countdown" data-id="2226248" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/2226248/salida-ps5" title="Salida PS5">Salida PS5</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum risus eget sem viverra tincidunt. Mauris maximus purus velit, eu venenatis dui molestie ut. Duis eu libero a risus auctor tincidunt sed in nunc. Mauris molestie mi quam, et tincidunt felis finibus sit amet. Morbi quam eros, malesuada sed dui sollicitudin, consequat gravida mauris. Aenean porta eros ultricies vestibulum vulputate. Suspendisse potenti. Sed nec molestie erat. Maecenas a lectus tempus, bibendum ligula non, dapibus augue. Aenean eget ultrices velit, laoreet rhoncus arcu. Proin nec metus nec felis fermentum congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus aliquet, ullamcorper odio non, cursus urna. Nulla non leo nisi.
+    <div class="bienvenida">
+        <img src="./img/logo_bienvenida.jpg">
+        <div class="textos_bienvenida">
+            <h2>Inicio</h2>
+            <p>En esta página se subirán notícias sobre nuevas salidas de videojuegos, nuevas salidas de componentes informáticas y haremos review de productos. <br> Hablaremos sobre los nuevos procesadores tanto de AMD como Intel y los compararemos entre ellos, haciendo test de estrés. Para ver lo capaz que es el procesador en cada una de las pruebas y para el mercado en el cuál se enfocará.</p> 
+        </div>
+    </div>
+    <div class="banner_galeria">
+        <div class="texto_galeria">
+            <p>GALERIA</p>
+        </div>
+        <div class="estr_btn">
+            <a href="" class="btn btn-yo btn-galeria"> <span>ENTRA</span> </a>
+        </div>    
+    </div>
 
-Ut sit amet quam ipsum. Maecenas euismod, orci euismod viverra tempus, eros turpis consectetur sapien, a commodo lorem ligula vel ante. Integer congue mauris sed rutrum elementum. Donec odio purus, malesuada eget magna id, mattis tristique lectus. Nam vestibulum elit ipsum, at mollis elit interdum ac. Sed eleifend sodales suscipit. Mauris volutpat libero nulla, sed ullamcorper sem lacinia non. Ut a massa faucibus, mollis ex vitae, dapibus nisi. Curabitur vitae est bibendum sapien aliquam mollis nec vel massa. Nullam aliquet sagittis diam in tincidunt.
+    <div class="container noticias">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="imagebox">
+                    <a href="#">
+                    <img src="./img/ps.png"  class="category-banner img-responsive">
+                    <span class="imagebox-desc">Noticias PS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="imagebox">
+                    <a href="#">
+                    <img src="./img/xbox.png"  class="category-banner img-responsive">
+                    <span class="imagebox-desc">Noticias XBOX</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="imagebox">
+                    <a href="#">
+                    <img src="./img/nintendo.png"  class="category-banner img-responsive">
+                    <span class="imagebox-desc">Noticias Nintendo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-In hac habitasse platea dictumst. Nulla tortor libero, vehicula egestas risus vel, elementum fringilla arcu. Nullam viverra mollis erat a elementum. Nunc finibus finibus sapien et finibus. Praesent consectetur id eros sed ultrices. Cras sed feugiat metus. Donec sit amet magna at risus scelerisque pulvinar. Vestibulum hendrerit placerat suscipit. Aenean libero purus, mattis eget quam ac, dapibus aliquet nibh. Nam eu augue eget mi feugiat convallis. Donec pulvinar, sem ut aliquet accumsan, ligula ipsum molestie mi, sit amet sagittis dui nulla eu tortor. Etiam a diam id metus consectetur maximus. Nunc in enim blandit, scelerisque nisi id, vulputate magna.
-
-Praesent dictum dapibus aliquet. Nullam sed orci at nibh ultrices convallis sit amet in sapien. Cras eu ex lorem. Proin elit sapien, tristique nec hendrerit ultrices, pellentesque vel ligula. Curabitur pharetra laoreet tortor nec interdum. Praesent at congue mauris. Etiam congue risus at sodales molestie.
-
-Sed tincidunt imperdiet mauris, a eleifend enim convallis et. Ut feugiat efficitur tellus ut tempor. Maecenas sollicitudin dui gravida pellentesque egestas. Duis sed viverra ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ornare ultricies arcu vitae consectetur. Cras at est lobortis, sollicitudin lacus a, malesuada lorem. Sed tristique eros turpis, sed convallis erat convallis a. Morbi luctus nibh quam. Proin blandit tincidunt massa, vel rhoncus neque placerat id. Cras lobortis dui in commodo tincidunt. Sed porta mi eget metus placerat, non elementum ligula vestibulum. Ut sodales eleifend diam, sit amet scelerisque lacus. Maecenas gravida fringilla felis, ut ornare ex scelerisque sed. Aliquam malesuada purus pulvinar augue sollicitudin euismod. Fusce semper sapien nisl, sit amet dignissim velit condimentum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum risus eget sem viverra tincidunt. Mauris maximus purus velit, eu venenatis dui molestie ut. Duis eu libero a risus auctor tincidunt sed in nunc. Mauris molestie mi quam, et tincidunt felis finibus sit amet. Morbi quam eros, malesuada sed dui sollicitudin, consequat gravida mauris. Aenean porta eros ultricies vestibulum vulputate. Suspendisse potenti. Sed nec molestie erat. Maecenas a lectus tempus, bibendum ligula non, dapibus augue. Aenean eget ultrices velit, laoreet rhoncus arcu. Proin nec metus nec felis fermentum congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus aliquet, ullamcorper odio non, cursus urna. Nulla non leo nisi.
-
-Ut sit amet quam ipsum. Maecenas euismod, orci euismod viverra tempus, eros turpis consectetur sapien, a commodo lorem ligula vel ante. Integer congue mauris sed rutrum elementum. Donec odio purus, malesuada eget magna id, mattis tristique lectus. Nam vestibulum elit ipsum, at mollis elit interdum ac. Sed eleifend sodales suscipit. Mauris volutpat libero nulla, sed ullamcorper sem lacinia non. Ut a massa faucibus, mollis ex vitae, dapibus nisi. Curabitur vitae est bibendum sapien aliquam mollis nec vel massa. Nullam aliquet sagittis diam in tincidunt.
-
-In hac habitasse platea dictumst. Nulla tortor libero, vehicula egestas risus vel, elementum fringilla arcu. Nullam viverra mollis erat a elementum. Nunc finibus finibus sapien et finibus. Praesent consectetur id eros sed ultrices. Cras sed feugiat metus. Donec sit amet magna at risus scelerisque pulvinar. Vestibulum hendrerit placerat suscipit. Aenean libero purus, mattis eget quam ac, dapibus aliquet nibh. Nam eu augue eget mi feugiat convallis. Donec pulvinar, sem ut aliquet accumsan, ligula ipsum molestie mi, sit amet sagittis dui nulla eu tortor. Etiam a diam id metus consectetur maximus. Nunc in enim blandit, scelerisque nisi id, vulputate magna.
-
-Praesent dictum dapibus aliquet. Nullam sed orci at nibh ultrices convallis sit amet in sapien. Cras eu ex lorem. Proin elit sapien, tristique nec hendrerit ultrices, pellentesque vel ligula. Curabitur pharetra laoreet tortor nec interdum. Praesent at congue mauris. Etiam congue risus at sodales molestie.
-
-Sed tincidunt imperdiet mauris, a eleifend enim convallis et. Ut feugiat efficitur tellus ut tempor. Maecenas sollicitudin dui gravida pellentesque egestas. Duis sed viverra ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ornare ultricies arcu vitae consectetur. Cras at est lobortis, sollicitudin lacus a, malesuada lorem. Sed tristique eros turpis, sed convallis erat convallis a. Morbi luctus nibh quam. Proin blandit tincidunt massa, vel rhoncus neque placerat id. Cras lobortis dui in commodo tincidunt. Sed porta mi eget metus placerat, non elementum ligula vestibulum. Ut sodales eleifend diam, sit amet scelerisque lacus. Maecenas gravida fringilla felis, ut ornare ex scelerisque sed. Aliquam malesuada purus pulvinar augue sollicitudin euismod. Fusce semper sapien nisl, sit amet dignissim velit condimentum sed.</p>
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: David Juan Aranda
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

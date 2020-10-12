@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .header{
   width: 100%;
   min-height: 100vh;
@@ -83,4 +87,103 @@
 .btn-yo:hover{
   color: #f4f4f4;
   background-color: #c10000;
+}
+ /* Texto bienvenida */
+.bienvenida {
+  margin-top: 3%;
+  margin-left: 10%;
+  float: left;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.textos_bienvenida h2{
+  font-size: 40px;
+  margin-bottom: 2%;
+}
+
+.textos_bienvenida {
+  margin-left: 5%;
+  font-size: 21px;
+}
+/* banner galeria */
+.banner_galeria {
+  float:left;
+  width: 100%;
+  min-height: 20vh;
+  background-image: url(../img/banner_galeria_min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 3%; 
+}
+
+.texto_galeria {
+  float: left;
+  width: 50%;
+  font-family: 'Anton';
+  color: white;
+  margin-top: 3%;
+  margin-left: 4%;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.estr_btn {
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.estr_btn a {
+  font-size: 40px;
+}
+
+/*Apartado noticias */
+.imagebox {
+  background: black;
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.imagebox img {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.imagebox .imagebox-desc {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0px;
+  color: white;
+  font-size: 1.2em;
+  left: 0px;
+  padding: 10px 15px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  width: 100%;
+}
+
+.imagebox:hover img {
+  opacity: 0.7;
+}
+
+.imagebox:hover .imagebox-desc {
+  padding-bottom: 10%;
+}
+
+.noticias {
+  margin-bottom: 3%;
+}
+
+footer {
+  background-color: grey;
+}
+
+footer div {
+  color: white;
 }
