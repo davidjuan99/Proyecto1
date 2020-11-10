@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
     <title>Cursa Bellvitge</title>
   </head>
@@ -22,9 +22,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class=" navg navbar-nav w-100 justify-content-center " >
-                        <a class="nav-item nav-link active" href="#">Inicio</a>
+                        <a class="nav-item nav-link" href="../index.php">Inicio</a>
                         <a class="nav-item nav-link" href="#">Clasificaciones</a>
-                        <a class="nav-item nav-link" href="./view/inscripcion.php">Inscripciones</a>
+                        <a class="nav-item nav-link active" href="./inscripcion.php">Inscripciones</a>
                         <a class="nav-item nav-link" href="#">Noticias</a>
                         <a class="nav-item nav-link" href="#">Galeria</a>
                       </div>
@@ -32,7 +32,6 @@
                   </nav>
             </div>
         </div>
-
         <div class="text-header d-flex align-items-center">
             <div class="container">
                 <div class="row">
@@ -44,56 +43,52 @@
                 </div>
             </div>
         </div>
-
-    </header>
-    <!-- Opcional hasta que creemos la lógica de la cuenta atrás -->
-    <div data-type="countdown" data-id="2226248" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/2226248/salida-ps5" title="Salida PS5">Carrera Bellvitge</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
-
-    <div class="bienvenida">
-        <img src="./img/imagen galeria.jpg">
-        <div class="textos_bienvenida">
-            <h2>Inicio</h2>
-            <p>En esta página se subirán notícias sobre nuevas carreras que vayan surgiendo en el panorama municipal.</p> 
-        </div>
+        </header>
+<form style="margin-top:2%;" class="formInscripcion">
+<img src="../img/form2-test.png" style="float:right;margin-right:5.8%;">
+  <div class="form-row" style="margin-left:5%;">
+    <div class="form-group col-md-2">
+      <label for="Nombre">Nombre: </label>
+      <input type="text" class="form-control" id="name" name="nombre" placeholder="Introduce tu nombre...">
     </div>
-    <div class="banner_galeria">
-        <div class="texto_galeria">
-            <p>GALERIA</p>
-        </div>
-        <div class="estr_btn">
-            <a href="" class="btn btn-yo btn-galeria"> <span>ENTRA</span> </a>
-        </div>    
+    <div class="form-group col-md-2">
+      <label for="DNI">DNI: </label>
+      <input type="text" class="form-control" id="dni" name="dni" placeholder="Introduce tu DNI...">
     </div>
-
-    <div class="container noticias">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="imagebox">
-                    <a href="#">
-                    <img src="./img/ps.png"  class="category-banner img-responsive">
-                    <span class="imagebox-desc">Noticias PS</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="imagebox">
-                    <a href="#">
-                    <img src="./img/xbox.png"  class="category-banner img-responsive">
-                    <span class="imagebox-desc">Noticias XBOX</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="imagebox">
-                    <a href="#">
-                    <img src="./img/nintendo.png"  class="category-banner img-responsive">
-                    <span class="imagebox-desc">Noticias Nintendo</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="form-row" style="margin-left:5%;">
+  <div class="form-group col-md-2">
+    <label for="inputAddress">Primer apellido: </label>
+    <input type="text" class="form-control" id="primerApellido" name="primerApellido" placeholder="Introduce tu primer apellido...">
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputAddress2">Segundo apellido: </label>
+    <input type="text" class="form-control" id="segundoApellido" name="segundoApellido" placeholder="Introduce tu segundo apellido...">
+  </div>
+  </div>
+  <div class="form-row" style="margin-left:5%;">
+    <div class="form-group col-md-2">
+      <label for="inputCity">Fecha Nacimiento: </label>
+      <input type="date" class="form-control" id="inputCity">
     </div>
-
+    <div class="form-group col-md-2">
+      <label for="email">Email: </label>
+      <input type="email" class="form-control" name="mail" id="mail" placeholder="Introduce tu mail...">
+    </div>
+    </div>
+    <div class="form-group col-md-4" style="margin-left:4.5%;">
+      <label for="inputState">Género</label>
+      <select id="inputState" class="form-control">
+        <option>Hombre</option>
+        <option>Mujer</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4" style="margin-left:4.5%;">
+      <label for="Categoria">Categoria: </label>
+      <input type="text" class="form-control" id="categoria" name="categoria">
+    </div>
+  <button type="submit" class="btn btn-secondary" style="margin-left:5.3%;margin-bottom:2%;">Inscribirse</button>
+</form>
     <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3">© 2020 Copyright: David Juan Aranda
         </div>

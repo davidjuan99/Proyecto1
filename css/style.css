@@ -112,7 +112,7 @@ body {
   float:left;
   width: 100%;
   min-height: 20vh;
-  background-image: url(../img/banner_galeria_min.jpg);
+  background-image: url(../img/galeria.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -180,6 +180,7 @@ body {
 .noticias {
   margin-bottom: 3%;
 }
+
 
 footer {
   background-color: grey;
