@@ -1,52 +1,50 @@
 function validacionForm() {
     // variables 
-    var email=document.getElementById('mail').value;
-    // alert(email);
+    var mail=document.getElementById('mail').value;
     var nombre=document.getElementById('nombre').value;
     var dni=document.getElementById('dni').value;
-    // alert(dni);
-    var apellido=document.getElementById('primerApellido').value;
-    var apellido2=document.getElementById('segundoApellido').value;
-    var fecha=document.getElementById('fechaNac').value;
+    var primerApellido=document.getElementById('primerApellido').value;
+    var segundoApellido=document.getElementById('segundoApellido').value;
+    var fechaNac=document.getElementById('fechaNac').value;
     if (dni=='') {
-        document.getElementById("dni").style.border = "thick solid #FF0000";
+        document.getElementById("dni").style.border = "thick groove #FF0000";
     }
     if (nombre=='') {
-        document.getElementById("nombre").style.border = "thick solid #FF0000";
+        document.getElementById("nombre").style.border = "thick groove #FF0000";
     }
-    if (apellido=='') {
-        document.getElementById("primerApellido").style.border = "thick solid #FF0000";
+    if (primerApellido=='') {
+        document.getElementById("primerApellido").style.border = "thick groove #FF0000";
     }
-    if (apellido2=='') {
-        document.getElementById("segundoApellido").style.border = "thick solid #FF0000";
+    if (segundoApellido=='') {
+        document.getElementById("segundoApellido").style.border = "thick groove #FF0000";
     }
-    if (email=='') {
-        document.getElementById("mail").style.border = "thick solid #FF0000";
+    if (mail=='') {
+        document.getElementById("mail").style.border = "thick groove #FF0000";
     }
-    if (fecha=='') {
-        document.getElementById("fechaNac").style.border = "thick solid #FF0000";
+    if (fechaNac=='') {
+        document.getElementById("fechaNac").style.border = "thick groove #FF0000";
     }
 
     if (dni!='') {
-        document.getElementById("dni").style.border = "white";
+        document.getElementById("dni").style.border = "grey";
     }
     if (nombre!='') {
-        document.getElementById("nombre").style.border = "white";
+        document.getElementById("nombre").style.border = "grey";
     }
-    if (apellido!='') {
-        document.getElementById("primerApellido").style.border = "white";
+    if (primerApellido!='') {
+        document.getElementById("primerApellido").style.border = "grey";
     }
-    if (apellido2!='') {
-        document.getElementById("segundoApellido").style.border = "white";
+    if (segundoApellido!='') {
+        document.getElementById("segundoApellido").style.border = "grey";
     }
-    if (email!='') {
-        document.getElementById("mail").style.border = "white";
+    if (mail!='') {
+        document.getElementById("mail").style.border = "grey";
     }
-    if (fecha!='') {
-        document.getElementById("fechaNac").style.border = "white";
+    if (fechaNac!='') {
+        document.getElementById("fechaNac").style.border = "grey";
     }
-    if (dni=='' || nombre=='' || apellido=='' || apellido2=='' || email=='' || fecha=='') {
-        document.getElementById('message').innerHTML='<p style="color:red">Rellene los campos obligatorios.</p>';
+    if (dni=='' || nombre=='' || primerApellido=='' || segundoApellido=='' || mail=='' || fechaNac=='') {
+        document.getElementById('message').innerHTML='<p style="color:red">Rellena los campos vacios, por favor.</p>';
         return false
     } else {
         validarDNI();
@@ -68,7 +66,7 @@ function validarDNI() {
             //tengo un NIE con inicio valido
             var solonum="XYZ".indexOf(dniNie.substr(0,1))+dniNie.substr(1,7);
             return true
-        }else {
+        } else {
             document.getElementById('message').innerHTML='<p style="color:red">El NIE no es válido.</p>';
             return false
         }
