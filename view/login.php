@@ -45,48 +45,47 @@
             </div>
         </div>
         </header>
-<div class="d-flex justify-content-center">        
-<form style="margin-top:2%;" class="formInscripcion" method="POST" onsubmit="return validacionForm() && validarDNI()">
-<!-- <img src="../img/form2-test.png" style="float:right;margin-right:5.8%;"> -->
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Nombre: </label>
-      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre...">
+<!-- <form style="margin-top:2%;" class="formInscripcion" onsubmit="return validarForm()">
+ --><!-- <img src="../img/form2-test.png" style="float:right;margin-right:5.8%;"> -->
+  <!-- <div class="form-row" style="margin-left:5%;">
+    <div class="form-group col-md-2">
+      <label for="Nombre">Nombre: </label>
+      <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre...">
     </div>
-    <div class="form-group col-md-6">
-      <label>DNI: </label>
+    <div class="form-group col-md-2">
+      <label for="DNI">DNI: </label>
       <input type="text" class="form-control" id="dni" name="dni" placeholder="DNI...">
     </div>
   </div>
-  <div class="form-row">
-  <div class="form-group col-md-6">
-    <label>Primer apellido: </label>
+  <div class="form-row" style="margin-left:5%;">
+  <div class="form-group col-md-2">
+    <label for="inputAddress">Primer apellido: </label>
     <input type="text" class="form-control" id="primerApellido" name="primerApellido" placeholder="Primer apellido...">
   </div>
-  <div class="form-group col-md-6">
-    <label>Segundo apellido: </label>
+  <div class="form-group col-md-2">
+    <label for="inputAddress2">Segundo apellido: </label>
     <input type="text" class="form-control" id="segundoApellido" name="segundoApellido" placeholder="Segundo apellido...">
   </div>
   </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label>Fecha Nacimiento: </label>
+  <div class="form-row" style="margin-left:5%;">
+    <div class="form-group col-md-2">
+      <label for="inputCity">Fecha Nacimiento: </label>
       <input type="date" class="form-control" id="fechaNac" name="fechaNac">
     </div>
-    <div class="form-group col-md-6">
-      <label>Email: </label>
+    <div class="form-group col-md-2">
+      <label for="mail">Email: </label>
       <input type="email" class="form-control" name="mail" id="mail" placeholder="Mail...">
     </div>
     </div>
-    <div class="form-group">
-      <label>Género</label>
+    <div class="form-group col-md-4" style="margin-left:4.5%;">
+      <label for="inputState">Género</label>
       <select class="form-control" name="genero" >
         <option value="Hombre">Hombre</option>
         <option value="Mujer">Mujer</option>
       </select>
     </div>
-    <div class="form-group">
-      <label>Categoria:</label>
+    <div class="form-group col-md-4" style="margin-left:4.5%;">
+      <label for="inputState">Categoria:</label>
       <?php
       include '../model/connection.php';
       $sql="SELECT id_categoria, nom_categoria FROM tbl_categoria";
@@ -100,19 +99,21 @@
       echo "</select><br>";
       ?>
     </div>
-    <div id="message"></div>
-  <input type="submit" class="btn btn-secondary" name="btn_insc" value="Inscribirse" style="margin-bottom:2%;"></input>
-</div>
-  
+  <button type="submit" class="btn btn-secondary" name="btn_insc" style="margin-left:5.3%;margin-bottom:2%;">Inscribirse</button>
+</form> -->
+<form onsubmit="return validacionForm()">
+  <label>Nombre: </label>
+  <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+  <button type="submit" style="margin-left:5.3%;margin-bottom:2%;">Inscribirse</button>
 </form>
-
-        <?php
-          if(isset($_POST['btn_insc'])){
-             include '../model/inscripcionDAO.php';
-             $parti= new InscripcionDAO();
-             $parti->insertBBDD();
-          }
-        ?>
+<div id="message"></div>
+       <!-- 
+          // if(isset($_POST['btn_insc'])){
+          //   include '../model/inscripcionDAO.php';
+          //   $parti= new InscripcionDAO();
+          //   $parti->insertBBDD();
+          // }
+        ?> -->
     <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3">© 2020 Copyright: David Juan Aranda
         </div>
