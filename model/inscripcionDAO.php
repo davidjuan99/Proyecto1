@@ -12,11 +12,11 @@ class InscripcionDAO {
 		srand((double)microtime()*1000000);
 		$dorsal = rand(1,999);
 		$curdate=date("Y/m/d");
-		$sql=$pdo->prepare("INSERT INTO tbl_inscripcion (`ins_dorsal`,`fecha_insc`,`pagadoSINO`,`precio_ins`) VALUES (?, ?, NULL, NULL);");
+		$sql=$pdo->prepare("INSERT INTO tbl_inscripcion (`ins_dorsal`,`fecha_ins`,`pagadoSINO`,`precio_ins`) VALUES (?, ?, NULL, NULL);");
 		$sql->bindParam(1,$dorsal);
 		$sql->bindParam(2,$curdate);
 		$sql->execute();
-		$stmt=$pdo->prepare("INSERT INTO tbl_participante (`DNI_parti`,`nom_parti`,`apellido_parti`,`apellido2_parti`, `email_parti`, `fechaNac`, `genero_parti`,`id_categoria`,`dorsal`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
+		$stmt=$pdo->prepare("INSERT INTO tbl_participante (`DNI_parti`,`nom_parti`,`apellido_parti`,`apellido2_parti`, `fechaNac`, `genero_parti`,`email_parti`,`id_categoria`,`dorsal`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
 		$nombre=$_POST['nombre'];
 		$apellido1=$_POST['primerApellido'];
 		$apellido2=$_POST['segundoApellido'];
@@ -29,9 +29,9 @@ class InscripcionDAO {
 		$stmt->bindParam(2,$nombre);
 		$stmt->bindParam(3,$apellido1);
 		$stmt->bindParam(4,$apellido2);
-		$stmt->bindParam(5,$email);
-		$stmt->bindParam(6,$fechaNac);
-		$stmt->bindParam(7,$genero);
+		$stmt->bindParam(5,$fechaNac);
+		$stmt->bindParam(6,$genero);
+		$stmt->bindParam(7,$email);
 		$stmt->bindParam(8,$categoria);
 		$stmt->bindParam(9,$dorsal);
 		$stmt->execute();

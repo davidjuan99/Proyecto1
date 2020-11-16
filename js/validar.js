@@ -48,9 +48,41 @@ function validacionForm() {
         return false
     } else {
         validarDNI();
+        /*var contenido = document.getElementById('form');
+
+        if (contenido.style.display=="" || contenido.style.display=="block" ) {
+            contenido.style.display="none";
+            document.getElementById("datos").innerHTML="Datos correctos";
+            document.getElementById("link").innerHTML+='<a href="../index.php">Volver al inicio</a>';
+        } else {
+            contenido.style.display="block";
+
+            // enlace.innerHTML="Ocultar Contenido";
+        }
+        return false;*/
     }
     return true
 }
+
+
+// function validarFor(){
+//     // alert('hola');
+//     var inputs = document.getElementsByTagName("input");
+//     for (let i = 0; i < inputs.length; i++) {
+//         if (inputs[i].type == 'text' && inputs[i].value == '') {
+//             inputs[i].style.borderColor = 'red';
+//         } else if (inputs[i].type == 'email' && inputs[i].value == ''){
+//             inputs[i].style.borderColor = 'red';
+//         } else if (inputs[i].type == 'date' && inputs[i].value == ''){
+//             inputs[i].style.borderColor = 'red';
+//         } else {
+//             inputs[i].style.borderColor = 'grey';
+//         }
+//         // console.log(inputs[i].type);
+//     }
+//     return false;
+
+// }
 
 function validarDNI() {
       // Validar DNI/NIE
@@ -76,12 +108,14 @@ function validarDNI() {
         if (letras[dniNie.substr(0,8)%23] === dniNie.substr(-1,1)) {
             document.getElementById('message').innerHTML='<p style="color:red">NIF correcto.</p>';
             return true
+
         }else{
             document.getElementById('message').innerHTML='<p style="color:red">La letra del NIF está mal.</p>';
             return false
         }
-    }else {
+    } else {
         document.getElementById('message').innerHTML='<p style="color:red">Debe acabar con letra.</p>';
         return false
     }
 }
+

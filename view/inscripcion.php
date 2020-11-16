@@ -46,7 +46,7 @@
         </div>
         </header>
 <div class="d-flex justify-content-center">        
-<form style="margin-top:2%;" class="formInscripcion" method="POST" onsubmit="return validacionForm() && validarDNI()">
+<form style="margin-top:2%;" class="formInscripcion" method="POST" id="form" onsubmit="return validacionForm() && validarDNI()">
 <!-- <img src="../img/form2-test.png" style="float:right;margin-right:5.8%;"> -->
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -101,9 +101,10 @@
       ?>
     </div>
     <div id="message"></div>
-  <input type="submit" class="btn btn-secondary" name="btn_insc" value="Inscribirse" style="margin-bottom:2%;"></input>
+  <input type="submit" class="btn btn-secondary" id="btn_insc" name="btn_insc" value="Inscribirse" style="margin-bottom:2%;"></input>
 </div>
-  
+  <h1 id="datos"></h1>
+  <h1 id="link"></h1>
 </form>
 
         <?php
