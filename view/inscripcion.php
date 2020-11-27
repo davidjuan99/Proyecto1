@@ -46,7 +46,7 @@
         </div>
         </header>
 <div class="d-flex justify-content-center">        
-<form style="margin-top:2%;" class="formInscripcion" method="POST" id="form" onsubmit="return validacionForm() && validarDNI()">
+<form style="margin-top:2%;" class="formInscripcion" method="POST" id="form">
 <!-- <img src="../img/form2-test.png" style="float:right;margin-right:5.8%;"> -->
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -85,22 +85,8 @@
         <option value="Mujer">Mujer</option>
       </select>
     </div>
-    <div class="form-group">
-      <label>Categoria:</label>
-      <?php
-      include '../model/connection.php';
-      $sql="SELECT id_categoria, nom_categoria FROM tbl_categoria";
-      $sentencia=$pdo->prepare($sql);
-      $sentencia->execute();
-      $lista_filtro=$sentencia->fetchAll(PDO::FETCH_ASSOC);
-      echo "<select name='categoria' style='float:left' class='form-control';>";
-      foreach ($lista_filtro as $categoria) {
-        echo "<option value='".$categoria['id_categoria']."'>".$categoria['nom_categoria']."</option>";
-      }
-      echo "</select><br>";
-      ?>
-    </div>
     <div id="message"></div>
+    <div id="categoria"></div>
   <input type="submit" class="btn btn-secondary" id="btn_insc" name="btn_insc" value="Inscribirse" style="margin-bottom:2%;"></input>
 </div>
   <h1 id="datos"></h1>
